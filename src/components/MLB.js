@@ -20,6 +20,7 @@ export default function MLB() {
 			>
 				Major League Baseball
 			</Typography>
+			<img src={"../../img/mlb.png"} style={{ width: "230px" }}></img>
 			<QuickLink />
 			{games &&
 				games.map((game) => (
