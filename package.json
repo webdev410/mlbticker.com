@@ -5,7 +5,7 @@
 	"author": "Andrew Keiser",
 	"license": "ISC",
 	"main": "index.js",
-	"homepage": "https://mlbticker.com",
+	"homepage": "https://www.mlbticker.com",
 	"scripts": {
 		"start": "react-scripts start",
 		"predeploy": "npm run build",
