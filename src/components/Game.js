@@ -29,8 +29,8 @@ export default function Game({ game }) {
 					display: "flex",
 					flexDirection: "column",
 					width: "100%",
-					border: "3px solid white",
-					borderRadius: "5px",
+					borderTop: "5px solid white",
+					borderBottom: "5px solid white",
 					paddingTop: 1,
 				}}
 			>
@@ -45,7 +45,7 @@ export default function Game({ game }) {
 					<Box sx={{ display: "flex" }}>
 						<Team team={away} />
 					</Box>
-					<Box sx={{ display: "flex" }}>
+					<Box sx={{ display: "flex", mt: 1 }}>
 						<Team team={home} />
 					</Box>
 				</Box>

@@ -7,7 +7,7 @@ export default function Team({ team }) {
 	const styles = {
 		title: {
 			fontWeight: 700,
-			fontSize: "2rem",
+			fontSize: "1.5rem",
 			margin: 0,
 			fontFamily: "monospace",
 			textAlign: "center",
@@ -25,6 +25,9 @@ export default function Team({ team }) {
 			alignItems: "center",
 			width: "80%",
 			justifyContent: "space-around",
+			borderRadius: 1,
+			flexGrow: 1,
+			overflow: "visible",
 		},
 	};
 
@@ -55,7 +58,7 @@ export default function Team({ team }) {
 						style={{
 							width: "125px",
 							height: "125px",
-							marginRight: 10,
+							marginRight: "15px",
 						}}
 					/>
 				) : null}
