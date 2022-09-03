@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/webdev410/mlbticker.com/static/css/main.073c9b0a.css",
-    "main.js": "/webdev410/mlbticker.com/static/js/main.2bef2626.js",
-    "index.html": "/webdev410/mlbticker.com/index.html",
-    "main.073c9b0a.css.map": "/webdev410/mlbticker.com/static/css/main.073c9b0a.css.map",
-    "main.2bef2626.js.map": "/webdev410/mlbticker.com/static/js/main.2bef2626.js.map"
+    "main.css": "/static/css/main.073c9b0a.css",
+    "main.js": "/static/js/main.2bef2626.js",
+    "index.html": "/index.html",
+    "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
+    "main.2bef2626.js.map": "/static/js/main.2bef2626.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
