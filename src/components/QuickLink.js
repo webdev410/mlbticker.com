@@ -3,14 +3,14 @@ import { Box, Button, Grid, Typography } from "@mui/material";
 import TEAMS from "./Teams/teams.json";
 import { useState } from "react";
 export default function QuickLink({}) {
-	const [showQuickLinks, setShowQuickLinks] = useState(true);
+	const [showQuickLinks, setShowQuickLinks] = useState(false);
 	const toggleLinks = () => {
 		if (showQuickLinks) setShowQuickLinks(false);
 		else setShowQuickLinks(true);
 	};
 	return (
 		<Box sx={{}}>
-			<Button onClick={toggleLinks}>
+			<Button onClick={toggleLinks} variant="contained">
 				{showQuickLinks ? "Hide Quick Links" : "Show Quick Links"}
 			</Button>
 			{showQuickLinks ? (
@@ -23,8 +23,8 @@ export default function QuickLink({}) {
 										<img
 											src={`${team.logo}`}
 											alt=""
-											width={"35px"}
-											height={"35px"}
+											width={"40px"}
+											height={"40px"}
 										/>
 									</a>
 								</Grid>

@@ -22,23 +22,26 @@ export default function Game({ game }) {
 				alignItems: "baseline",
 				mt: 10,
 				ml: 0,
-				width: "100%",
 			}}
 		>
 			<Box
 				sx={{
 					display: "flex",
 					flexDirection: "column",
+					width: "100%",
+					border: "3px solid white",
+					borderRadius: "5px",
+					paddingTop: 1,
 				}}
 			>
-				<Typography sx={{ ...styles.title }}>
+				<Typography sx={{ ...styles.title, fontSize: 20 }}>
 					{game.venue.name}
 				</Typography>
 				<Typography sx={{ ...styles.title }}>
 					{dateFormat(game.gameDate)}
 				</Typography>
 				{/* Teams & Scores */}
-				<Box>
+				<Box sx={{ width: "75%" }}>
 					<Box sx={{ display: "flex" }}>
 						<Team team={away} />
 					</Box>
@@ -48,16 +51,6 @@ export default function Game({ game }) {
 				</Box>
 			</Box>
 			{/* Base Paths */}
-			{/* <Box
-				sx={{
-					display: "flex",
-					flexDirection: "column",
-					alignItems: "center",
-					mr: "40%",
-				}}
-			>
-				<Diamond />
-			</Box> */}
 		</Box>
 	);
 }

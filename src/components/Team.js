@@ -20,10 +20,10 @@ export default function Team({ team }) {
 			display: "flex",
 		},
 		teambox: {
-			p: 2,
+			p: 1,
 			display: "flex",
 			alignItems: "center",
-			width: "350px",
+			width: "80%",
 			justifyContent: "space-around",
 		},
 	};
@@ -43,9 +43,9 @@ export default function Team({ team }) {
 			<Box
 				id={`${teamParams.shortName}`}
 				sx={{
+					...styles.teambox,
 					backgroundColor: teamParams.primary,
 					color: teamParams.secondary,
-					...styles.teambox,
 				}}
 			>
 				{teamParams ? (
@@ -55,7 +55,7 @@ export default function Team({ team }) {
 						style={{
 							width: "125px",
 							height: "125px",
-							marginRight: 20,
+							marginRight: 10,
 						}}
 					/>
 				) : null}
