@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 import { useMlb } from "../context/MlbContext";
 import Game from "./Game";
+import QuickLink from "./QuickLink";
 export default function MLB() {
 	const { games, fetchGames, loading } = useMlb();
 
@@ -19,7 +20,7 @@ export default function MLB() {
 			>
 				Major League Baseball
 			</Typography>
-
+			<QuickLink />
 			{games &&
 				games.map((game) => (
 					<Box key={game.gamePk}>

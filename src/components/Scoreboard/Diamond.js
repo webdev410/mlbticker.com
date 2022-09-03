@@ -2,56 +2,57 @@ import React from "react";
 import { Box, Typography } from "@mui/material";
 export default function Diamond() {
 	const styles = {
+		container: {
+			position: "relative",
+			mt: 4,
+		},
 		base: {
 			position: "absolute",
-			height: "85px",
-			width: "85px",
+			height: "25px",
+			width: "25px",
 			transform: "rotate(-45deg)",
-			border: "1px solid white",
+			border: "7px solid black",
 			backgroundColor: "transparent",
 			zIndex: "1000",
-			border: "7px solid white",
 		},
 		onBase: {
 			backgroundColor: "gold",
 			border: "7px solid gold",
 		},
 		firstBase: {
-			top: "450px",
-			left: "706px",
+			top: "90px",
+			left: "140px",
 		},
 		secondBase: {
-			top: "231px",
-			left: "484px",
+			top: "46px",
+			left: "96px",
 		},
 		thridBase: {
-			top: "450px",
-			left: "262px",
+			top: "90px",
+			left: "52px",
 		},
 	};
 	return (
-		<Box sx={{ position: "absolute" }}>
-			<Box sx={{ position: "relative" }}>
-				<Box
-					sx={{
-						...styles.base,
-						...styles.firstBase,
-						...styles.onBase,
-					}}
-				></Box>
-				<Box
-					sx={{
-						...styles.base,
-						...styles.secondBase,
-					}}
-				></Box>
-				<Box
-					sx={{
-						...styles.base,
-						...styles.thridBase,
-					}}
-				></Box>
-			</Box>
+		<Box sx={{ ...styles.container }}>
+			<Box
+				sx={{
+					...styles.base,
+					...styles.firstBase,
+					...styles.onBase,
+				}}
+			></Box>
+			<Box
+				sx={{
+					...styles.base,
+					...styles.secondBase,
+				}}
+			></Box>
+			<Box
+				sx={{
+					...styles.base,
+					...styles.thridBase,
+				}}
+			></Box>
 		</Box>
 	);
 }

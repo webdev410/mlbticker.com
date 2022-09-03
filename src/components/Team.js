@@ -7,7 +7,7 @@ export default function Team({ team }) {
 	const styles = {
 		title: {
 			fontWeight: 700,
-			fontSize: 32,
+			fontSize: "2em",
 			margin: 0,
 			fontFamily: "monospace",
 			textAlign: "center",
@@ -23,11 +23,11 @@ export default function Team({ team }) {
 			p: 2,
 			display: "flex",
 			alignItems: "center",
-			width: "550px",
+			width: "350px",
 			justifyContent: "space-around",
 		},
 	};
-	let logo;
+
 	useEffect(() => {
 		if (team && teamsJSON) {
 			teamsJSON.forEach((obj) => {
@@ -38,10 +38,10 @@ export default function Team({ team }) {
 		}
 	}, [team]);
 
-	console.log(logo);
 	return (
 		<>
 			<Box
+				id={`${teamParams.shortName}`}
 				sx={{
 					backgroundColor: teamParams.primary,
 					color: teamParams.secondary,
@@ -53,8 +53,8 @@ export default function Team({ team }) {
 						src={teamParams ? teamParams.logo : null}
 						alt=""
 						style={{
-							width: "175px",
-							height: "175px",
+							width: "125px",
+							height: "125px",
 							marginRight: 20,
 						}}
 					/>

@@ -1,54 +1,63 @@
 [
 	{
 		"teamName": "Baltimore Orioles",
+		"shortName": "orioles",
 		"logo": "../../img/orioles.png",
 		"primary": "#fb4f14",
 		"secondary": "#000000"
 	},
 	{
 		"teamName": "Boston Red Sox",
+		"shortName": "redsox",
 		"logo": "../../img/redsox.png",
 		"primary": "#bd3039",
 		"secondary": "#192c55"
 	},
 	{
 		"teamName": "Pittsburgh Pirates",
+		"shortName": "pirates",
 		"logo": "../../img/pirates.png",
 		"primary": "#000",
 		"secondary": "#fdb827"
 	},
 	{
 		"teamName": "Cincinnati Reds",
+		"shortName": "reds",
 		"logo": "../../img/reds.png",
 		"primary": "#c6011f",
 		"secondary": "#000"
 	},
 	{
 		"teamName": "Colorado Rockies",
+		"shortName": "rockies",
 		"logo": "../../img/rockies.png",
 		"secondary": "#33006f",
 		"primary": "#c4ced4"
 	},
 	{
 		"teamName": "Oakland Athletics",
+		"shortName": "athletics",
 		"logo": "../../img/athletics.png",
 		"primary": "#003831",
 		"secondary": "#efb21e"
 	},
 	{
 		"teamName": "New York Yankees",
+		"shortName": "yankees",
 		"logo": "../../img/yankees.png",
 		"primary": "#132448",
 		"secondary": "#c4ced3"
 	},
 	{
 		"teamName": "Arizona Diamondbacks",
+		"shortName": "diamondbacks",
 		"logo": "../../img/diamondbacks.png",
 		"primary": "#a71930",
 		"secondary": "#e3d4ad"
 	},
 	{
 		"teamName": "Atlanta Braves",
+		"shortName": "braves",
 		"logo": "../../img/braves.png",
 		"secondary": "#ce1141",
 		"primary": "#13274f",
@@ -56,126 +65,147 @@
 	},
 	{
 		"teamName": "Chicago Cubs",
+		"shortName": "cubs",
 		"logo": "../../img/cubs.png",
 		"primary": "#0e3386",
 		"secondary": "#cc3433"
 	},
 	{
 		"teamName": "Chicago White Sox",
+		"shortName": "",
 		"logo": "../../img/whitesox.png",
 		"primary": "#000",
 		"secondary": "#c4c3d4"
 	},
 	{
 		"teamName": "Cleveland Guardians",
+		"shortName": "guardians",
 		"logo": "../../img/guardians.png",
 		"primary": "#e31937",
 		"secondary": "#1a2e5a"
 	},
 	{
 		"teamName": "Detroit Tigers",
+		"shortName": "tigers",
 		"logo": "../../img/tigers.png",
 		"secondary": "#182d55",
 		"primary": "#f26722"
 	},
 	{
 		"teamName": "Houston Astros",
+		"shortName": "astros",
 		"logo": "../../img/astros.png",
 		"primary": "#002d62",
 		"secondary": "#eb6e1f"
 	},
 	{
 		"teamName": "Kansas City Royals",
+		"shortName": "royals",
 		"logo": "../../img/royals.png",
 		"primary": "#7bb2dd",
 		"secondary": "#174885"
 	},
 	{
 		"teamName": "Los Angeles Angels",
+		"shortName": "angels",
 		"logo": "../../img/angles.png",
 		"primary": "#ba0021",
 		"secondary": "#c4ced4"
 	},
 	{
 		"teamName": "Los Angeles Dodgers",
+		"shortName": "dodgers",
 		"logo": "../../img/dodgers.png",
 		"secondary": "#005a9c",
 		"primary": "#fff"
 	},
 	{
 		"teamName": "Miami Marlins",
+		"shortName": "marlins",
 		"logo": "../../img/marlins.png",
 		"secondary": "#ff6600",
 		"primary": "#0077c8"
 	},
 	{
 		"teamName": "Milwaukee Brewers",
+		"shortName": "brewers",
 		"logo": "../../img/brewers.png",
 		"secondary": "#0a2351",
 		"primary": "#b6922e"
 	},
 	{
 		"teamName": "Minnesota Twins",
+		"shortName": "twins",
 		"logo": "../../img/twins.png",
 		"primary": "#002b5c",
 		"secondary": "#d31145"
 	},
 	{
 		"teamName": "New York Mets",
+		"shortName": "mets",
 		"logo": "../../img/mets.png",
 		"primary": "#002d72",
 		"secondary": "#ff5910"
 	},
 	{
 		"teamName": "Philadelphia Phillies",
+		"shortName": "phillies",
 		"logo": "../../img/phillies.png",
 		"primary": "#e81828",
 		"secondary": "#284898"
 	},
 	{
 		"teamName": "San Diego Padres",
+		"shortName": "padres",
 		"logo": "../../img/padres.png",
 		"secondary": "#002d62",
 		"primary": "#fff"
 	},
 	{
 		"teamName": "San Francisco Giants",
+		"shortName": "giants",
 		"logo": "../../img/giants.png",
 		"primary": "#fd5a1e",
 		"secondary": "#e6d8af"
 	},
 	{
 		"teamName": "St. Louis Cardinals",
+		"shortName": "cardinals",
 		"logo": "../../img/cardinals.png",
 		"primary": "#c41e3a",
 		"secondary": "#22205f"
 	},
 	{
 		"teamName": "Seattle Mariners",
+		"shortName": "mariners",
 		"logo": "../../img/mariners.png",
 		"primary": "#0c2c56",
 		"secondary": "#005c5c"
 	},
 	{
 		"teamName": "Tampa Bay Rays",
+		"shortName": "rays",
 		"logo": "../../img/rays.png",
 		"primary": "#092c5c",
 		"secondary": "#8fbce6"
 	},
 	{
 		"teamName": "Texas Rangers",
+		"shortName": "rangers",
 		"logo": "../../img/rangers.png",
 		"primary": "#003278",
 		"secondary": "#c0111f"
 	},
 	{
 		"teamName": "Washington Nationals",
+		"shortName": "nationals",
 		"logo": "../../img/nationals.png",
 		"primary": "#ab0003",
 		"secondary": "#212759"
 	},
 	{
 		"teamName": "Toronto Blue Jays",
+		"shortName": "bluejays",
 		"logo": "../../img/bluejays.png",
 		"primary": "#134a8e",
 		"secondary": "#e8291c"
