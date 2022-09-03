@@ -11,8 +11,8 @@ export default function QuickLink({}) {
 							<img
 								src={`${team.logo}`}
 								alt=""
-								width={"25px"}
-								height={"25px"}
+								width={"35px"}
+								height={"35px"}
 							/>
 						</a>
 					</Box>
