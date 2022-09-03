@@ -7,7 +7,7 @@ export default function Team({ team }) {
 	const styles = {
 		title: {
 			fontWeight: 700,
-			fontSize: "2em",
+			fontSize: "2rem",
 			margin: 0,
 			fontFamily: "monospace",
 			textAlign: "center",

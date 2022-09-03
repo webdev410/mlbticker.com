@@ -10,25 +10,31 @@ export default function QuickLink({}) {
 	};
 	return (
 		<Box sx={{}}>
-			<Button onClick={toggleLinks} variant="contained">
+			<Button
+				onClick={toggleLinks}
+				variant="contained"
+				sx={{ mb: 2, backgroundColor: "white", color: "black" }}
+			>
 				{showQuickLinks ? "Hide Quick Links" : "Show Quick Links"}
 			</Button>
 			{showQuickLinks ? (
 				<Grid container spacing={1}>
 					{TEAMS &&
 						TEAMS.map((team, i) => (
-							<>
-								<Grid item xs={2} key={`${team.shortName}${i}`}>
-									<a href={`#${team.shortName}`}>
-										<img
-											src={`${team.logo}`}
-											alt=""
-											width={"40px"}
-											height={"40px"}
-										/>
-									</a>
-								</Grid>
-							</>
+							<Grid item xs={2} key={`${team.shortName}${i}`}>
+								<Button
+									href={`#${team.shortName}`}
+									variant="contained"
+									sx={{ backgroundColor: "white" }}
+								>
+									<img
+										src={`${team.logo}`}
+										alt=""
+										width={"40px"}
+										height={"40px"}
+									/>
+								</Button>
+							</Grid>
 						))}
 				</Grid>
 			) : null}

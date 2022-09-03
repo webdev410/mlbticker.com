@@ -41,7 +41,7 @@ export default function Game({ game }) {
 					{dateFormat(game.gameDate)}
 				</Typography>
 				{/* Teams & Scores */}
-				<Box sx={{ width: "75%" }}>
+				<Box sx={{ flexGrow: 1, maxWidth: 800 }}>
 					<Box sx={{ display: "flex" }}>
 						<Team team={away} />
 					</Box>

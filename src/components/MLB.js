@@ -15,9 +15,7 @@ export default function MLB() {
 	if (loading) return "loading...";
 	return (
 		<Box>
-			<Typography
-				sx={{ color: "text.primary", fontWeight: "bold", fontSize: 32 }}
-			>
+			<Typography sx={{ fontWeight: "bold", fontSize: 32 }}>
 				Major League Baseball
 			</Typography>
 			<img src={"../../img/mlb.png"} style={{ width: "230px" }}></img>
