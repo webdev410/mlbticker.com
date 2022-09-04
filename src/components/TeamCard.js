@@ -12,7 +12,6 @@ import SkipNextIcon from "@mui/icons-material/SkipNext";
 import teamsJSON from "./Teams/teams.json";
 
 export default function TeamCard({ team }) {
-	const theme = useTheme();
 	const [teamParams, setTeamParams] = React.useState({});
 	// console.log(team);
 	const styles = {
@@ -25,8 +24,6 @@ export default function TeamCard({ team }) {
 		},
 		score: {
 			fontFamily: "monospace",
-			textAlign: "right",
-			alignItems: "baseling",
 			marginLeft: 3,
 		},
 		teambox: {
@@ -67,25 +64,42 @@ export default function TeamCard({ team }) {
 					image={teamParams ? teamParams.logo : null}
 					alt="Live from space album cover"
 				/>
-				<Box sx={{ display: "flex", flexDirection: "column" }}>
+				<Box
+					sx={{
+						display: "flex",
+						flexDirection: "column",
+					}}
+				>
 					<CardContent sx={{ flex: "1 0 auto" }}>
 						<Typography sx={{ ...styles.title }}>
 							{team.team.name}
 						</Typography>
 
-						<Typography sx={{ ...styles.title, fontSize: 18 }}>
+						<Typography sx={{ ...styles.title, fontSize: "1.3em" }}>
 							{team.leagueRecord.wins}-{team.leagueRecord.losses}
 						</Typography>
 
-						<Typography sx={{ ...styles.title, fontSize: 14 }}>
+						<Typography sx={{ ...styles.title, fontSize: "1em" }}>
 							({team.leagueRecord.pct})
 						</Typography>
 					</CardContent>
 				</Box>
 			</Card>
-			<Box sx={{ ...styles.score, width: 100 }}>
+			<Box
+				sx={{
+					width: 100,
+					display: "flex",
+					flexDirection: "row",
+					alignItems: "center",
+				}}
+			>
 				<Typography
-					sx={{ ...styles.title, fontSize: 96, textAlign: "right" }}
+					sx={{
+						...styles.title,
+						...styles.score,
+						fontSize: "4rem",
+						textAlign: "right",
+					}}
 				>
 					{team.score}
 				</Typography>
