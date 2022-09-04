@@ -17,9 +17,9 @@ export default function TeamCard({ team }) {
 	const styles = {
 		title: {
 			fontWeight: 700,
-			fontSize: "1.6rem",
+			fontSize: "1.3rem",
 			margin: 0,
-			lineHeight: "1.5rem",
+			lineHeight: "1.4rem",
 			fontFamily: "monospace",
 		},
 		score: {
@@ -52,9 +52,10 @@ export default function TeamCard({ team }) {
 			<Card
 				sx={{
 					display: "flex",
-					width: 375,
+					width: { xs: 150, sm: 355 },
 					backgroundColor: teamParams.primary,
 					color: teamParams.secondary,
+					alignItems: "center",
 				}}
 				id={`${teamParams.shortName}`}
 			>
@@ -62,7 +63,7 @@ export default function TeamCard({ team }) {
 					component="img"
 					sx={{ width: 150 }}
 					image={teamParams ? teamParams.logo : null}
-					alt="Live from space album cover"
+					alt="logo"
 				/>
 				<Box
 					sx={{
@@ -70,16 +71,21 @@ export default function TeamCard({ team }) {
 						flexDirection: "column",
 					}}
 				>
-					<CardContent sx={{ flex: "1 0 auto" }}>
+					<CardContent
+						sx={{
+							display: { xs: "none", sm: "block" },
+							sm: { flex: "1 0 auto" },
+						}}
+					>
 						<Typography sx={{ ...styles.title }}>
 							{team.team.name}
 						</Typography>
 
-						<Typography sx={{ ...styles.title, fontSize: "1.3em" }}>
+						<Typography sx={{ ...styles.title, fontSize: "1rem" }}>
 							{team.leagueRecord.wins}-{team.leagueRecord.losses}
 						</Typography>
 
-						<Typography sx={{ ...styles.title, fontSize: "1em" }}>
+						<Typography sx={{ ...styles.title, fontSize: ".8rem" }}>
 							({team.leagueRecord.pct})
 						</Typography>
 					</CardContent>
