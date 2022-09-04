@@ -6,6 +6,7 @@ import { useMlb } from "../context/MlbContext";
 import dateFormat from "../utils/dateFormat";
 import Diamond from "./Scoreboard/Diamond";
 import StatusIndicator from "./Status";
+import TeamCard from "./TeamCard";
 export default function Game({ game }) {
 	const { loading, setLoading, setGames } = useMlb();
 	const home = game.teams.home;
@@ -49,10 +50,12 @@ export default function Game({ game }) {
 				{/* Teams & Scores */}
 				<Box sx={{ flexGrow: 1, maxWidth: 800 }}>
 					<Box sx={{ display: "flex" }}>
-						<Team team={away} />
+						{/* <Team team={away} /> */}
+						<TeamCard team={away} />
 					</Box>
 					<Box sx={{ display: "flex", mt: 1 }}>
-						<Team team={home} />
+						{/* <Team team={home} /> */}
+						<TeamCard team={home} />
 					</Box>
 				</Box>
 			</Box>

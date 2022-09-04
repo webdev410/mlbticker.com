@@ -14,13 +14,6 @@
 		"secondary": "#192c55"
 	},
 	{
-		"teamName": "Pittsburgh Pirates",
-		"shortName": "pirates",
-		"logo": "../../img/pirates.png",
-		"primary": "#000",
-		"secondary": "#fdb827"
-	},
-	{
 		"teamName": "Cincinnati Reds",
 		"shortName": "reds",
 		"logo": "../../img/reds.png",
@@ -35,20 +28,6 @@
 		"primary": "#c4ced4"
 	},
 	{
-		"teamName": "Oakland Athletics",
-		"shortName": "athletics",
-		"logo": "../../img/athletics.png",
-		"primary": "#003831",
-		"secondary": "#efb21e"
-	},
-	{
-		"teamName": "New York Yankees",
-		"shortName": "yankees",
-		"logo": "../../img/yankees.png",
-		"primary": "#132448",
-		"secondary": "#c4ced3"
-	},
-	{
 		"teamName": "Arizona Diamondbacks",
 		"shortName": "diamondbacks",
 		"logo": "../../img/diamondbacks.png",
@@ -59,9 +38,9 @@
 		"teamName": "Atlanta Braves",
 		"shortName": "braves",
 		"logo": "../../img/braves.png",
-		"secondary": "#ce1141",
-		"primary": "#13274f",
-		"third": "#13274f"
+		"primary": "#ce1141",
+		"third": "#13274f",
+		"secondary": "#13274f"
 	},
 	{
 		"teamName": "Chicago Cubs",
@@ -117,7 +96,7 @@
 		"shortName": "dodgers",
 		"logo": "../../img/dodgers.png",
 		"secondary": "#005a9c",
-		"primary": "#fff"
+		"primary": "#A5ACAF"
 	},
 	{
 		"teamName": "Miami Marlins",
@@ -148,6 +127,20 @@
 		"secondary": "#ff5910"
 	},
 	{
+		"teamName": "New York Yankees",
+		"shortName": "yankees",
+		"logo": "../../img/yankees.png",
+		"primary": "#132448",
+		"secondary": "#c4ced3"
+	},
+	{
+		"teamName": "Oakland Athletics",
+		"shortName": "athletics",
+		"logo": "../../img/athletics.png",
+		"primary": "#003831",
+		"secondary": "#efb21e"
+	},
+	{
 		"teamName": "Philadelphia Phillies",
 		"shortName": "phillies",
 		"logo": "../../img/phillies.png",
@@ -155,11 +148,18 @@
 		"secondary": "#284898"
 	},
 	{
+		"teamName": "Pittsburgh Pirates",
+		"shortName": "pirates",
+		"logo": "../../img/pirates.png",
+		"primary": "#000",
+		"secondary": "#fdb827"
+	},
+	{
 		"teamName": "San Diego Padres",
 		"shortName": "padres",
 		"logo": "../../img/padres.png",
 		"secondary": "#002d62",
-		"primary": "#fff"
+		"primary": "#FFC425"
 	},
 	{
 		"teamName": "San Francisco Giants",
@@ -197,17 +197,17 @@
 		"secondary": "#c0111f"
 	},
 	{
-		"teamName": "Washington Nationals",
-		"shortName": "nationals",
-		"logo": "../../img/nationals.png",
-		"primary": "#ab0003",
-		"secondary": "#212759"
-	},
-	{
 		"teamName": "Toronto Blue Jays",
 		"shortName": "bluejays",
 		"logo": "../../img/bluejays.png",
 		"primary": "#134a8e",
 		"secondary": "#e8291c"
+	},
+	{
+		"teamName": "Washington Nationals",
+		"shortName": "nationals",
+		"logo": "../../img/nationals.png",
+		"primary": "#ab0003",
+		"secondary": "#212759"
 	}
 ]
