@@ -10,6 +10,7 @@ import Container from "@mui/material/Container";
 import Fab from "@mui/material/Fab";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import Fade from "@mui/material/Fade";
+import CustomTooltip from "./CustomTooltip";
 
 function ScrollTop(props) {
 	const { children, window } = props;
@@ -56,14 +57,16 @@ ScrollTop.propTypes = {
 	window: PropTypes.func,
 };
 
-export default function ScrollTop(props) {
+export default function BackToTop(props) {
 	return (
 		<React.Fragment>
-			<CssBaseline />
+			<Toolbar id="back-to-top-anchor" />
 			<ScrollTop {...props}>
-				<Fab size="small" aria-label="scroll back to top">
-					<KeyboardArrowUpIcon />
-				</Fab>
+				<CustomTooltip text="Back to Top">
+					<Fab size="small" aria-label="scroll back to top">
+						<KeyboardArrowUpIcon />
+					</Fab>
+				</CustomTooltip>
 			</ScrollTop>
 		</React.Fragment>
 	);

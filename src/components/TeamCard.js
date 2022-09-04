@@ -22,14 +22,11 @@ export default function TeamCard({ team }) {
 			margin: 0,
 			lineHeight: "1.5rem",
 			fontFamily: "monospace",
-			textAlign: "center",
 		},
 		score: {
 			fontFamily: "monospace",
-			justifyContent: "center",
-			alignItems: "center",
+
 			marginLeft: 3,
-			display: "flex",
 		},
 		teambox: {
 			p: 1,
@@ -74,9 +71,11 @@ export default function TeamCard({ team }) {
 						<Typography sx={{ ...styles.title }}>
 							{team.team.name}
 						</Typography>
+
 						<Typography sx={{ ...styles.title, fontSize: 18 }}>
 							{team.leagueRecord.wins}-{team.leagueRecord.losses}
 						</Typography>
+
 						<Typography sx={{ ...styles.title, fontSize: 14 }}>
 							({team.leagueRecord.pct})
 						</Typography>
@@ -84,7 +83,9 @@ export default function TeamCard({ team }) {
 				</Box>
 			</Card>
 			<Box sx={{ ...styles.score, width: 100 }}>
-				<Typography sx={{ ...styles.title, fontSize: 96 }}>
+				<Typography
+					sx={{ ...styles.title, fontSize: 96, textAlign: "right" }}
+				>
 					{team.score}
 				</Typography>
 			</Box>

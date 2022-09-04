@@ -4,7 +4,7 @@ import { useMlb } from "../context/MlbContext";
 import Game from "./Game";
 import QuickLink from "./QuickLink";
 import RefreshButton from "./RefreshButton";
-import ScrollTop from "./ScrollToTop";
+import BackToTop from "./ScrollToTop";
 export default function MLB() {
 	const { games, fetchGames, loading } = useMlb();
 
@@ -18,7 +18,7 @@ export default function MLB() {
 	return (
 		<Box>
 			<RefreshButton />
-			<ScrollTop />
+			<BackToTop />
 			<Typography sx={{ fontWeight: "bold", fontSize: 32 }}>
 				Major League Baseball
 			</Typography>
