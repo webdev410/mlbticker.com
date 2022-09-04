@@ -3,6 +3,7 @@ import { Box, Typography } from "@mui/material";
 import { useMlb } from "../context/MlbContext";
 import Game from "./Game";
 import QuickLink from "./QuickLink";
+import RefreshButton from "./RefreshButton";
 export default function MLB() {
 	const { games, fetchGames, loading } = useMlb();
 
@@ -15,6 +16,7 @@ export default function MLB() {
 	if (loading) return "loading...";
 	return (
 		<Box>
+			<RefreshButton />
 			<Typography sx={{ fontWeight: "bold", fontSize: 32 }}>
 				Major League Baseball
 			</Typography>
