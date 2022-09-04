@@ -5,6 +5,7 @@ import { getOneGame } from "../utils/queries";
 import { useMlb } from "../context/MlbContext";
 import dateFormat from "../utils/dateFormat";
 import Diamond from "./Scoreboard/Diamond";
+import StatusIndicator from "./Status";
 export default function Game({ game }) {
 	const { loading, setLoading, setGames } = useMlb();
 	const home = game.teams.home;
@@ -37,9 +38,14 @@ export default function Game({ game }) {
 				<Typography sx={{ ...styles.title, fontSize: 20 }}>
 					{game.venue.name}
 				</Typography>
-				<Typography sx={{ ...styles.title }}>
-					{dateFormat(game.gameDate)}
-				</Typography>
+				<Box display={"flex"}>
+					<Typography sx={{ ...styles.title }}>
+						{dateFormat(game.gameDate)}
+					</Typography>
+					<Box sx={{ ml: 3 }}>
+						<StatusIndicator game={game} />
+					</Box>
+				</Box>
 				{/* Teams & Scores */}
 				<Box sx={{ flexGrow: 1, maxWidth: 800 }}>
 					<Box sx={{ display: "flex" }}>
