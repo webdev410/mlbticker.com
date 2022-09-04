@@ -1,20 +1,26 @@
 import * as React from "react";
+import { useTheme } from "@mui/material/styles";
+import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material";
+import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
+import SkipPreviousIcon from "@mui/icons-material/SkipPrevious";
+import PlayArrowIcon from "@mui/icons-material/PlayArrow";
+import SkipNextIcon from "@mui/icons-material/SkipNext";
 import teamsJSON from "./Teams/teams.json";
-import { Box } from "@mui/system";
+
 export default function TeamCard({ team }) {
+	const theme = useTheme();
 	const [teamParams, setTeamParams] = React.useState({});
 	// console.log(team);
 	const styles = {
 		title: {
 			fontWeight: 700,
-			fontSize: "1.5rem",
+			fontSize: "1.6rem",
 			margin: 0,
+			lineHeight: "1.5rem",
 			fontFamily: "monospace",
 			textAlign: "center",
 		},
@@ -46,55 +52,39 @@ export default function TeamCard({ team }) {
 			});
 		}
 	}, [team]);
-
 	return (
 		<>
 			<Card
-				id={`${teamParams.shortName}`}
 				sx={{
-					...styles.teambox,
-					marginBottom: 2,
-					maxWidth: 355,
+					display: "flex",
+					width: 375,
 					backgroundColor: teamParams.primary,
 					color: teamParams.secondary,
 				}}
+				id={`${teamParams.shortName}`}
 			>
 				<CardMedia
 					component="img"
-					ale={team.team.name}
-					height="200"
+					sx={{ width: 150 }}
 					image={teamParams ? teamParams.logo : null}
+					alt="Live from space album cover"
 				/>
-				<CardContent>
-					<Typography
-						gutterBottom
-						variant="h5"
-						component="div"
-						sx={{ ...styles.title }}
-					>
-						{team.team.name}
-					</Typography>
-					<Typography
-						variant="body1"
-						sx={{ ...styles.title, fontSize: 18 }}
-					>
-						{team.leagueRecord.wins}-{team.leagueRecord.losses}
-					</Typography>
-					<Typography
-						variant="body2"
-						sx={{ ...styles.title, fontSize: 14 }}
-					>
-						({team.leagueRecord.pct})
-					</Typography>
-				</CardContent>
-				<CardActions>
-					<Typography
-						sx={{ ...styles.title, fontSize: 14 }}
-					></Typography>
-				</CardActions>
+				<Box sx={{ display: "flex", flexDirection: "column" }}>
+					<CardContent sx={{ flex: "1 0 auto" }}>
+						<Typography sx={{ ...styles.title }}>
+							{team.team.name}
+						</Typography>
+						<Typography sx={{ ...styles.title, fontSize: 18 }}>
+							{team.leagueRecord.wins}-{team.leagueRecord.losses}
+						</Typography>
+						<Typography sx={{ ...styles.title, fontSize: 14 }}>
+							({team.leagueRecord.pct})
+						</Typography>
+					</CardContent>
+				</Box>
 			</Card>
-			<Box sx={{ ...styles.score }}>
-				<Typography sx={{ ...styles.title, fontSize: 112 }}>
+			<Box sx={{ ...styles.score, width: 100 }}>
+				<Typography sx={{ ...styles.title, fontSize: 96 }}>
 					{team.score}
 				</Typography>
 			</Box>
