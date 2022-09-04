@@ -11,8 +11,8 @@ export default function RefreshButton() {
 				size="small"
 				sx={{
 					position: "fixed",
-					top: 10,
-					right: 10,
+					top: 25,
+					right: 25,
 					backgroundImage: "url(../../img/favicon.png)",
 				}}
 				aria-label="add"

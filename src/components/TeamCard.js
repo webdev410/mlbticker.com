@@ -52,12 +52,12 @@ export default function TeamCard({ team }) {
 			<Card
 				sx={{
 					display: "flex",
-					width: { xs: 150, sm: 355 },
+					width: { xs: 150, sm: 355, md: 500 },
 					backgroundColor: teamParams.primary,
 					color: teamParams.secondary,
 					alignItems: "center",
+					mb: 1,
 				}}
-				id={`${teamParams.shortName}`}
 			>
 				<CardMedia
 					component="img"
@@ -103,7 +103,7 @@ export default function TeamCard({ team }) {
 					sx={{
 						...styles.title,
 						...styles.score,
-						fontSize: "4rem",
+						fontSize: "7rem",
 						textAlign: "right",
 					}}
 				>

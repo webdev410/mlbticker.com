@@ -7,6 +7,7 @@ import dateFormat from "../utils/dateFormat";
 import Diamond from "./Scoreboard/Diamond";
 import StatusIndicator from "./Status";
 import TeamCard from "./TeamCard";
+import TEAMSJSON from "./Teams/teams.json";
 export default function Game({ game }) {
 	const { loading, setLoading, setGames } = useMlb();
 	const home = game.teams.home;
@@ -25,6 +26,11 @@ export default function Game({ game }) {
 				mt: 10,
 				ml: 0,
 			}}
+			id={`${
+				home.team.name.toLowerCase().split(" ")[
+					home.team.name.toLowerCase().split(" ").length - 1
+				]
+			}`}
 		>
 			<Box
 				sx={{
@@ -35,6 +41,11 @@ export default function Game({ game }) {
 					borderBottom: "5px solid white",
 					paddingTop: 1,
 				}}
+				id={`${
+					away.team.name.toLowerCase().split(" ")[
+						away.team.name.toLowerCase().split(" ").length - 1
+					]
+				}`}
 			>
 				<Typography sx={{ ...styles.title, fontSize: 20 }}>
 					{game.venue.name}
