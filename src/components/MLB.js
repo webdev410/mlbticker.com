@@ -5,6 +5,7 @@ import Game from "./Game";
 import QuickLink from "./QuickLink";
 import RefreshButton from "./RefreshButton";
 import BackToTop from "./ScrollToTop";
+import Spinner from "./Spinner";
 export default function MLB() {
 	const { games, fetchGames, loading } = useMlb();
 
@@ -14,7 +15,7 @@ export default function MLB() {
 		fetchGames();
 	}, []);
 
-	if (loading) return "loading...";
+	if (loading) return <Spinner />;
 	return (
 		<Box>
 			<RefreshButton />

@@ -25,7 +25,8 @@ export default function TeamCard({ team }) {
 		},
 		score: {
 			fontFamily: "monospace",
-
+			textAlign: "right",
+			alignItems: "baseling",
 			marginLeft: 3,
 		},
 		teambox: {
