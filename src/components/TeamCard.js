@@ -50,6 +50,7 @@ export default function TeamCard({ team }) {
 	return (
 		<>
 			<Card
+				id={`${teamParams.shortName}`}
 				sx={{
 					...styles.teambox,
 					marginBottom: 2,
