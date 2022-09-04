@@ -51,9 +51,16 @@ export default function Game({ game }) {
 					{game.venue.name}
 				</Typography>
 				<Box display={"flex"}>
-					<Typography sx={{ ...styles.title }}>
-						{dateFormat(game.gameDate)}
-					</Typography>
+					{game.doubleHeader === "Y" && game.gameNumber === 2 ? (
+						<Typography sx={{ ...styles.title }}>
+							Immediately following game 1 of the double header
+						</Typography>
+					) : (
+						<Typography sx={{ ...styles.title }}>
+							{dateFormat(game.gameDate)}
+						</Typography>
+					)}
+
 					<Box sx={{ ml: 3 }}>
 						<StatusIndicator game={game} />
 					</Box>
