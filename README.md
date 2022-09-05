@@ -22,3 +22,7 @@ Provides live scoreboard of all Major League Baseball games.
 
 ![screenshot](./assets/ss.png)
 ![screenshot](./assets/ss2.png)
+
+## Contributors
+
+Andrew Keiser [Github](https://github.com/webdev410)
