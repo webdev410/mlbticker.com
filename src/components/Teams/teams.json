@@ -8,7 +8,7 @@
 	},
 	{
 		"teamName": "Boston Red Sox",
-		"shortName": "redsox",
+		"shortName": "sox",
 		"logo": "../../img/redsox.png",
 		"primary": "#bd3039",
 		"secondary": "#192c55"
@@ -198,7 +198,7 @@
 	},
 	{
 		"teamName": "Toronto Blue Jays",
-		"shortName": "bluejays",
+		"shortName": "jays",
 		"logo": "../../img/bluejays.png",
 		"primary": "#134a8e",
 		"secondary": "#e8291c"
