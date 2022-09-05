@@ -21,7 +21,7 @@ const MlbProvider = ({ children }) => {
 			setLoading(true);
 			const res = await getGames(getToday);
 			if (res) {
-				console.log("res", res);
+				// console.log("res", res);
 				setGames(res.dates[0].games);
 				// console.log({ resData: res.dates[0].games, games });
 			} else {

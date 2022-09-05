@@ -9,7 +9,7 @@ import Spinner from "./Spinner";
 export default function MLB() {
 	const { games, fetchGames, loading } = useMlb();
 
-	console.log({ games });
+	// console.log({ games });
 
 	React.useEffect(() => {
 		fetchGames();
